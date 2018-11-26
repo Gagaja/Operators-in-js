@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Priorities in JS</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="txt ">
+            <h1 class="main-title ">Priorities of operator in JS</h1>
+
+            <p class="main-paragraf ">In the table below you can see the priorities of some operators, <br> not all of them are listed in javascript,
+                <br> but only those with whom we will work on training. <br> 0 is the highest and 17 is the lowest priority</p>
+            <div class="navbar">
+                <a class="navbar-link mrg-right" href="operators.html">Home</a>
+                <a class="navbar-link mrg-right" href="priorities.html">Priorities</a>
+                <a class="navbar-link " href="example.html">Example in js</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="page-content container">
+
+        <!--<div class="section-one ">-->
+        <table class="table-section">
+
+            <thead>
+                <tr>
+                    <th class="th-td-size">
+                        <strong>Priority</strong>
+                    </th>
+                    <th>
+                        <strong>Type or Group of operators</strong>
+                    </th>
+                    <th>
+                        <strong>Example</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="th-td-size">0</td>
+                    <td>Grouping (brackets)</td>
+                    <td>
+                        <code>()</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="th-td-size">
+                        1</td>
+                    <td>Therm (point) or square bracket []
+                    </td>
+                    <td>
+                        <code>[]</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="th-td-size">2
+                    </td>
+                    <td>Call function </td>
+                    <td>
+                        <code>(…)</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="th-td-size" rowspan="2">3</td>
+
+                    <td>
+                        Increase by 1 (increment)</td>
+                    <td>
+                        <code>++</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Decrease by 1 (decrement)</td>
+
+                    <td>
+                        <code>--</code>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="th-td-size" rowspan="3">4</td>
+
+                    <td>
+                        Negation
+                    </td>
+                    <td>
+                        <code>!</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Plus to indicate that the number is positive
+                    </td>
+                    <td>
+                        <code>+</code>
+                    </td>
+
+                    <tr>
+                        <td>Minus to indicate that the number is negative
+                        </td>
+
+                        <td>
+                            <code>-</code>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="th-td-size" rowspan="3">5</td>
+
+                        <td>
+                            Multiplication
+                        </td>
+                        <td>
+                            <code>*</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Division
+                        </td>
+                        <td>
+                            <code>/</code>
+                        </td>
+
+                        <tr>
+                            <td>The rest of the division
+                            </td>
+
+                            <td>
+                                <code>%</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="th-td-size" rowspan="2">6</td>
+
+                            <td>Addition</td>
+                            <td>
+                                <code>+</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Subtraction</td>
+
+                            <td>
+                                <code>-</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="6">8</td>
+
+                            <td colspan="2">
+                                Comparison</td>
+
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                Value lower than set value?</td>
+                            <td>
+                                <code>&lt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Value lower or equal to the set value?
+                            </td>
+                            <td>
+                                <code>&lt;=</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Value bigger than set value?</td>
+                            <td>
+                                <code>&gt;</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Value bigger or equal to the set value?</td>
+                            <td>
+                                <code>&gt;=</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                in
+                            </td>
+                            <td>
+                                <code>in</code>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="th-td-size" rowspan="5">9</td>
+
+                            <td colspan="2">
+                                Equal</td>
+                        </tr>
+                        <tr>
+                            <td>Equal to
+                            </td>
+                            <td>
+                                <code>==</code>
+                            </td>
+
+                            <tr>
+                                <td>Equal value and equal type
+                                </td>
+
+                                <td>
+                                    <code>===</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Not equal
+                                </td>
+
+                                <td>
+                                    <code>!=</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Not equal value or not equal type
+                                </td>
+
+                                <td>
+                                    <code>!==</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>AND - and</td>
+                                <td>
+                                    <code>&amp;&amp;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Or</td>
+                                <td>
+                                    <code>||</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Ternary operator</td>
+                                <td>
+                                    <code> … ? … : …</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7">17</td>
+
+                                <td colspan="2">
+                                        Compound assignment operators</td>
+
+                            </tr>
+                            <tr>
+
+
+                                <td>
+                                        Assignment</td>
+                                <td>
+                                    <code>=&nbsp;(c&nbsp;=&nbsp;d)</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Addition assignment
+                                </td>
+                                <td>
+                                    <code>+=&nbsp;(c&nbsp;+&nbsp;=&nbsp;d or c&nbsp;=&nbsp;d&nbsp;+&nbsp;c )</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Subtraction assignment</td>
+                                <td>
+                                        <code>-=&nbsp;(c&nbsp;-&nbsp;=&nbsp;d or c&nbsp;=&nbsp;d&nbsp;-&nbsp;c )</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Multiplication assignment</td>
+                                <td>
+                                        <code>*=&nbsp;(c&nbsp;*&nbsp;=&nbsp;d or c&nbsp;=&nbsp;d&nbsp;*&nbsp;c )</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Division assignment
+                                </td>
+                                <td>
+                                    <code>/=&nbsp;(c&nbsp;/&nbsp;=&nbsp;d or c&nbsp;=&nbsp;d&nbsp;/&nbsp;c )</code>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Remainder assignment
+                                </td>
+                                <td>
+                                    <code>%=&nbsp;(c&nbsp;%&nbsp;=&nbsp;d or c&nbsp;=&nbsp;d&nbsp;%&nbsp;c )</code>
+                                </td>
+
+                            </tr>
+                            
+            </tbody>
+        </table>
+        <table>
+
+
+        </table>
+
+
+
+        <!--</div>-->
+        <!--<div class="section-two ">-->
+
+
+        <!--</div>-->
+    </div>
+
+
+
+</body>
+
+</html>

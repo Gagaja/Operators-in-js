@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+   
+}
+code{
+    background: #004C00;
+    color: #FFE36E;
+}
+hr {
+    
+    width: auto;
+    display:block;
+    animation: hrchange 7s ease-in;
+    animation-fill-mode: forwards;
+}
+
+body{
+    height: auto;
+    animation: colorchange1 7s ease-in;
+    animation-fill-mode: forwards;
+   
+}
+header{
+    animation: colorchange1 7s ease-in;
+    animation-fill-mode: forwards;
+}
+.txt {
+
+    min-height:200px;
+    padding: 300px 30px;
+    text-align: center;
+    animation: colorchange 7s  ease-in;
+    animation-fill-mode: forwards;
+    
+     
+}
+.main-title{
+    font-size: 70px;
+    color: #004C00;
+    letter-spacing: 1.2px;
+    animation: changefont 7s  ease-in;
+    animation-fill-mode: forwards;
+   
+    
+   
+}
+.navbar {
+    
+    animation: changenavbar 7s  ease-in;
+    animation-fill-mode: forwards;
+   
+}
+
+.navbar-link {
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0%;
+    display: inline-block;
+    animation: changenavbar 7s  ease-in;
+    animation-fill-mode: forwards;
+ 
+}
+.navbar-link {
+    animation: changenavbar2 7s  ease-in;
+    animation-fill-mode: forwards;
+
+}
+.navbar-link:hover{
+    text-decoration: none;
+    background: #5DD55D;
+   
+   
+   
+    
+}
+.mrg-right {
+
+    margin-right:20px;
+}
+.main-paragraf {
+
+    font-size: 35px;
+    color: #004C00;
+    letter-spacing: 1.2px;
+    animation: changefont2 7s  ease-in;
+    animation-fill-mode: forwards;
+}
+.one-para {
+    font-size: 20px;
+    color: none;
+    animation: changefont1 7s  ease-in;
+    animation-fill-mode: forwards;
+    text-align: center;
+    letter-spacing: 1px; line-height: 1.2;
+
+}
+.page-content{
+   padding: 35px 15px;
+    height: auto;
+    animation: changepage-content 7s  ease-in;
+    animation-fill-mode: forwards;
+    margin-bottom: 25px;
+    
+
+}
+/*.section-one {
+    
+    
+    min-height: 300px;
+    animation: colorchange2 7s  ease-in;
+    animation-fill-mode: forwards;
+    padding: 30px 0px;
+    
+}
+    
+.section-two {
+
+    
+    min-height: 300px;
+    padding: 30px 10px;
+    animation: colorchange3 7s  ease-in;
+    animation-fill-mode: forwards;
+   
+    
+}*/
+.main-list{
+    list-style: none;
+    font-size: 0%;
+    text-align: center;
+    animation: listchange 7s  ease-in;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+
+}
+.table-section{
+    animation: tablechange 7s  ease-in;
+    animation-fill-mode: forwards;
+    border-collapse: collapse;
+    margin:0 auto;
+   
+}
+
+th ,td{
+    color: #004C00;
+    padding: 7px;
+    text-align: center;
+    
+    font-size: 0%;
+    animation: tablechange2 7s  ease-in;
+    animation-fill-mode: forwards;
+}
+.example-cnt{
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.example-operators {
+
+    width: 25%;
+    height: auto;
+    animation: examplechange 7s  ease-in;
+    animation-fill-mode: forwards;
+    padding: 5px;
+    margin-top: 20px;
+    
+}
+.or, .and{
+    width: 50%;
+}
+@keyframes hrchange {
+
+    0% {}
+  
+    100% {height:0.5px;
+        border:0;   
+        border-top:1px solid #A30000;
+        margin:1em 0;
+        padding:0;}
+ 
+ }
+@keyframes changepage-content {
+
+    0% {}
+  
+    100% {background-image:url(../photos/js-img2.png);background-position: center center;background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 6px rgba(95, 0, 0, 0.550);}
+ 
+ }
+ @keyframes changenavbar {
+
+    0% {display: none;}
+  
+    100% {}
+ 
+ }
+ @keyframes changenavbar2 {
+
+    0% {display: none;}
+  
+    100% { color: #004C00;
+        border: 1px solid #004C00;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 18px;letter-spacing: 1px;
+        margin-top:20px;
+    }
+ 
+ }
+ 
+ 
+@keyframes listchange {
+
+    0% {}
+  
+    100% {font-size: 20px;letter-spacing: 1px;color: #004C00; line-height: 1.5;}
+ 
+ }
+@keyframes changefont {
+
+    0% {}
+  
+    100% {font-size: 45px;letter-spacing: 1px;}
+ 
+ }
+ @keyframes changefont1 {
+
+    0% {}
+  
+    100% {color: #004C00; font-weight: 400;}
+ 
+ }
+ @keyframes changefont2 {
+
+    0% {}
+  
+    100% {font-size: 20px;letter-spacing: 1px;}
+ 
+ }
+
+@keyframes colorchange {
+
+   0% {}
+ 
+   100% {padding:  30px 0;}
+
+}
+@keyframes colorchange1 {
+
+   0% {}
+  
+   100% { background: #FFE147;}
+ 
+ }
+
+ @keyframes tablechange2{
+
+    0% {}
+   
+    100% { border: 2px solid #A30000;font-size: 18px;}
+  
+  }
+  @keyframes examplechange{
+
+    0% {}
+   
+    100% {border-bottom: 1px dashed #A30000;  }
+  
+  }
+  
+/*@keyframes colorchange2 {
+
+ 0% {}
+ 
+ 100% {background-color: #669999; border-bottom: 1px solid #5F2B00;}
+}
+@keyframes colorchange3 {
+
+  0%  {}
+ 
+  100% {background-color: #88CC88;border-bottom: 1px solid #5F2B00;}
+}*/
